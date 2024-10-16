@@ -1,5 +1,8 @@
 import React from 'react';
 import cover from '../static/images/cover.png'
+import ReactDOM from 'react-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 import c1 from '../static/images/c1.jpg'
 import c2 from '../static/images/c2.jpg'
 import c3 from '../static/images/c3.jpg'
@@ -23,45 +26,17 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div id="advantagesCarousel" className="carousel slide m-5" data-bs-ride="carousel" data-bs-interval="3000">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div className="advantages-content text-center carousel-item-bg">
-                            <div style={{ backgroundImage: `url('./static/images/c1.jpg')` }} className="bg-image"></div>
-                            <div className="content">
-                                <h1>Instant Symptom Analysis</h1>
-                                <h3>Receive AI-driven guidance based on your symptoms to help you decide the best course of action.</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="advantages-content text-center carousel-item-bg">
-                            <div style={{ backgroundImage: `url('./static/images/c2.jpg')` }} className="bg-image"></div>
-                            <div className="content">
-                                <h1>Accessible Anytime, Anywhere</h1>
-                                <h3>Get health advice 24/7 from the comfort of your home, without needing an appointment.</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="advantages-content text-center carousel-item-bg">
-                            <div style={{ backgroundImage: `url('./static/images/c3.jpg')` }} className="bg-image"></div>
-                            <div className="content">
-                                <h1>Comprehensive Health Resources</h1>
-                                <h3>Access a wealth of information and resources to empower your health decisions.</h3>
-                            </div>
-                        </div>
-                    </div>
+            <Carousel>
+                <div>
+                    <img src ={c1} />
                 </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#advantagesCarousel" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#advantagesCarousel" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
+                <div>
+                    <img src={c2} />
+                </div>
+                <div>
+                    <img src={c3} />
+                </div>
+            </Carousel>
 
             <div className="m-5">
                 <h2 className="text-center">Frequently Asked Questions</h2>
