@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import './styles/style.css'; // Adjust the path if necessary
+
 
 const DoctorSignup = () => {
     const [formData, setFormData] = useState({

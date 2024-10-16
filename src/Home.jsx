@@ -1,4 +1,10 @@
 import React from 'react';
+import cover from './static/images/cover.png'
+import c1 from './static/images/c1.jpg'
+import c2 from './static/images/c2.jpg'
+import c3 from './static/images/c3.jpg'
+import './styles/style.css'
+
 
 const HomePage = () => {
     return (
@@ -13,7 +19,7 @@ const HomePage = () => {
                     </h3>
                 </div>
                 <div className="col-12 col-md-6">
-                    <img className="img-fluid cover" src="../static/images/cover.png" alt="cover" />
+                    <img className="img-fluid cover" src={cover} alt="cover" />
                 </div>
             </div>
 
