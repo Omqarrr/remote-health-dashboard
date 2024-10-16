@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import './styles/style.css'
+import '../styles/style.css'
+import axios from 'axios';
 
 
 
@@ -22,22 +23,15 @@ const SymptomInput = () => {
             duration,
             severity,
         };
+        console.log("hiii", requestData);
 
         try {
-            const response = await fetch('/api/analyze-symptoms', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(requestData),
-            });
 
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
+            const response = await axios.post('http://localhost:3001/answer', {
+                question: symptoms
+            })
 
-            const result = await response.json();
-            setAnalysisResult(result.analysis);
+            setAnalysisResult(response.data)
         } catch (error) {
             console.error('Error:', error);
             setAnalysisResult('There was an error processing your request. Please try again.');

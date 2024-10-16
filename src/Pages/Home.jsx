@@ -1,9 +1,9 @@
 import React from 'react';
-import cover from './static/images/cover.png'
-import c1 from './static/images/c1.jpg'
-import c2 from './static/images/c2.jpg'
-import c3 from './static/images/c3.jpg'
-import './styles/style.css'
+import cover from '../static/images/cover.png'
+import c1 from '../static/images/c1.jpg'
+import c2 from '../static/images/c2.jpg'
+import c3 from '../static/images/c3.jpg'
+import '../styles/style.css'
 
 
 const HomePage = () => {
