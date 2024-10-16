@@ -1,0 +1,81 @@
+{% extends 'base.html' %} {% block title %}Doctor Signup{% endblock %} {% block body %}
+<div class="m-5">
+    <h1 class="text-center">Doctor Signup</h1>
+    <h3 class="text-center">Join our platform to support patients by providing consultations.</h3>
+    <form action="/doctor_signup" class="mt-5" method="POST">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control form-control-lg" id="fullName" name="full_name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control form-control-lg" id="email" name="email" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="clinicName" class="form-label">Clinic/Hospital Name</label>
+                <input type="text" class="form-control form-control-lg" id="clinicName" name="clinic_name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="specialization" class="form-label">Specialization</label>
+                <input type="text" class="form-control form-control-lg" id="specialization" name="specialization" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control form-control-lg" id="phone" name="phone" required>
+            </div>
+            <div class="col-md-6">
+                <label for="availability" class="form-label">Availability</label>
+                <select class="form-select" id="availability" name="availability" style="line-height: 2;" required>
+					<option selected disabled value="">Choose your availability</option>
+					<option value="weekdays">Weekdays</option>
+					<option value="weekends">Weekends</option>
+					<option value="both">Both</option>
+				</select>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="bio" class="form-label">Short Bio</label>
+            <textarea class="form-control" id="bio" name="bio" rows="3" required></textarea>
+        </div>
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+        </div>
+    </form>
+
+    <h2 class="mt-5 mb-3">Thanks to Our Doctors</h2>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Clinic Name</th>
+                    <th>Specialization</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for doctor in doctors %}
+                <tr>
+                    <td>{{ doctor.id }}</td>
+                    <td>{{ doctor.full_name }}</td>
+                    <td>{{ doctor.email }}</td>
+                    <td>{{ doctor.phone }}</td>
+                    <td>{{ doctor.clinic_name }}</td>
+                    <td>{{ doctor.specialization }}</td>
+                    <td>{{ doctor.availability }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</div>
+{% endblock %}

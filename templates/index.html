@@ -1,0 +1,96 @@
+{% extends 'base.html' %} {% block title %}Home Page{% endblock %} {% block body %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 px-5 py-3">
+            <h1 class="fw-normal mt-5 text-center custom-h1">
+                Your Personal Health Assistant for Immediate Self-Care
+            </h1>
+            <h3 class="text-center mt-3">
+                Get instant advice on managing symptoms and know when to seek medical help, all from the comfort of your home.
+            </h3>
+        </div>
+        <div class="col-12 col-md-6">
+            <img class="img-fluid cover" src="../static/images/cover.png" alt="cover" />
+        </div>
+    </div>
+
+    <div id="advantagesCarousel" class="carousel slide m-5" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="advantages-content text-center carousel-item-bg">
+                    <div style="background-image: url('../static/images/c1.jpg');" class="bg-image"></div>
+                    <div class="content">
+                        <h1>Instant Symptom Analysis</h1>
+                        <h3>Receive AI-driven guidance based on your symptoms to help you decide the best course of action.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="advantages-content text-center carousel-item-bg">
+                    <div style="background-image: url('../static/images/c2.jpg');" class="bg-image"></div>
+                    <div class="content">
+                        <h1>Accessible Anytime, Anywhere</h1>
+                        <h3>Get health advice 24/7 from the comfort of your home, without needing an appointment.</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="advantages-content text-center carousel-item-bg">
+                    <div style="background-image: url('../static/images/c3.jpg');" class="bg-image"></div>
+                    <div class="content">
+                        <h1>Comprehensive Health Resources</h1>
+                        <h3>Access a wealth of information and resources to empower your health decisions.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-5">
+        <h2 class="text-center">Frequently Asked Questions</h2>
+        <div class="accordion mt-3" id="faqAccordion">
+            <div class="accordion-item">
+                <h1 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						What symptoms can I input?
+					</button>
+                </h1>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body faq-body">
+                        You can input a wide range of symptoms, including fever, cough, headaches, and more. The AI will provide guidance based on your inputs.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						Is the service free to use?
+					</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body faq-body">
+                        Yes, our platform offers free access to basic features. Additional premium services may be available in the future.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						How does the AI provide guidance?
+					</button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body faq-body">
+                        Our AI uses a database of medical knowledge and algorithms to analyze your symptoms and offer tailored advice for self-care.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+{% endblock body %}

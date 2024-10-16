@@ -1,0 +1,83 @@
+{% extends 'base.html' %} {% block title %}Symptom Input Page{% endblock %} {% block body %}
+<div class="m-5">
+    <h1 class="text-center">Input Your Symptoms</h1>
+    <h3 class="text-center">Enter your symptoms below to receive AI-driven guidance on the best course of action.</h3>
+
+    <form id="symptomInputForm" class="mt-4">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="symptoms" class="form-label fs-4">Symptoms:</label>
+                <textarea id="symptoms" class="form-control" placeholder="e.g., fever, cough, headache" rows="2" required></textarea>
+            </div>
+            <div class="col-md-6">
+                <label for="additionalInfo" class="form-label fs-4">Additional Information:</label>
+                <textarea id="additionalInfo" class="form-control" placeholder="Any other details..." rows="2"></textarea>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="startDate" class="form-label fs-4">Start Date:</label>
+                <input type="date" id="startDate" class="form-control form-control-lg" required>
+            </div>
+            <div class="col-md-4">
+                <label for="duration" class="form-label fs-4">Duration (Days):</label>
+                <input type="number" id="duration" class="form-control form-control-lg" placeholder="Number of days" min="1" required>
+            </div>
+            <div class="col-md-4">
+                <label for="severity" class="form-label fs-4">Severity:</label>
+                <select id="severity" class="form-select form-control-lg" style="line-height: 2;" required>
+                    <option value="" disabled selected>Select severity</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <button type="submit" class="btn btn-primary btn-lg">Get Analysis</button>
+        </div>
+    </form>
+
+    <div id="results" class="mt-5">
+        <h2 class="text-center">Analysis Results</h2>
+        <div class="alert alert-info" role="alert">
+            Your analysis results will be displayed here after you submit the form.
+        </div>
+    </div>
+
+    <div id="helpfulResources" class="mt-5">
+        <h2 class="text-center">Helpful Resources</h2>
+        <div class="row mt-4 text-center">
+            <div class="col-md-4">
+                <div class="card shadow-sm p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Understanding Your Symptoms</h5>
+                        <p class="card-text">Learn how to identify and interpret your symptoms effectively.</p>
+                        <div class="text-center"><a href="#" class="btn btn-primary">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">When to Seek Medical Help</h5>
+                        <p class="card-text">Know when it's time to consult a healthcare professional.</p>
+                        <div class="text-center"><a href="#" class="btn btn-primary">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Home Remedies for Common Symptoms</h5>
+                        <p class="card-text">Discover natural ways to alleviate your common symptoms.</p>
+                        <div class="text-center"><a href="#" class="btn btn-primary">Read More</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
