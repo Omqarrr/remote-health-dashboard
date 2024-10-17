@@ -41,7 +41,10 @@ NLP ensures that users can interact with the platform in multiple languages, imp
 End-to-end data encryption and compliance with healthcare regulations (such as HIPAA) ensure user privacy and data protection.
 
 # Application Maturity Roadmap
+![image](https://github.com/user-attachments/assets/f35b01d7-072a-4620-937e-b11ef66f8749)
+
 [Gen_AI_Health_Services_Roadmap.pdf](https://github.com/user-attachments/files/17406175/Gen_AI_Health_Services_Roadmap.pdf)
+
 
 # Usage
  - Symptom Checker: Enter your symptoms to receive immediate health recommendations.
