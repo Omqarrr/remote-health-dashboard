@@ -25,6 +25,10 @@ The platform is built on cutting-edge Generative AI technologies integrated with
 ## User Interface:
 A simple and intuitive web interface where users can enter symptoms, request consultations, and access healthcare recommendations.
 
+### Solution demo video
+
+[![Watch the video](https://img.youtube.com/vi/IWktsfherqA/maxresdefault.jpg)](https://youtu.be/IWktsfherqA)
+
 ## AI Engine (LangChain + RAG):
 The AI engine processes user symptoms, provides instant insights, and powers virtual consultations by assisting healthcare professionals in diagnosing and treating patients.
 
