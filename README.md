@@ -4,6 +4,9 @@
 The Gen AI-Powered Health Access Platform is a transformative solution designed to enhance equitable access to healthcare resources and opportunities for underserved communities globally. Leveraging advanced Generative AI technologies, this platform provides real-time health assessments, virtual consultations, and predictive health analytics, bridging the healthcare accessibility gap for people in remote or resource-limited areas.
 
 # Setup
+
+**Link to Backend** : https://github.com/daeven7/remote-health-backend
+
 - Install python on your machine: sudo yum install python3.9
 - Run python3.9 -m venv venv
 - source venv/bin/activate
