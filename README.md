@@ -32,8 +32,9 @@ A simple and intuitive web interface where users can enter symptoms, request con
 
 [![Watch the video](https://img.youtube.com/vi/IWktsfherqA/maxresdefault.jpg)](https://youtu.be/IWktsfherqA)
 
-## AI Engine (LangChain + RAG):
+## AI Engine (WatsonX + LangChain + RAG):
 The AI engine processes user symptoms, provides instant insights, and powers virtual consultations by assisting healthcare professionals in diagnosing and treating patients.
+Powered by WatsonX with langchain with Rag.
 
 ## Predictive Health Module:
 AI algorithms analyze user health data over time to predict potential future health risks and offer preventive care solutions.
