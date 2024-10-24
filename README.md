@@ -13,6 +13,9 @@ The Gen AI-Powered Health Access Platform is a transformative solution designed 
 - Click on the link http://127.0.0.1:5000
 
 # Solution Architecture Diagram
+![Architecture-Diagram](https://github.com/user-attachments/assets/99b513b3-c879-42e0-88c4-05177a88c5b0)
+
+
 ![Remote Health Plus - Solution Architecture Diagram drawio](https://github.com/user-attachments/assets/b3ca3c27-9a80-43f5-96e3-4ded6c9c1754)
 
 # Solution Overview
